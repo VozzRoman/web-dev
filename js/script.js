@@ -9,26 +9,6 @@ $(document).ready(function () {
 	});
 });
 
-//-------------------ibg---------------------//
-function ibg() {
-	let ibg = document.querySelectorAll(".ibg");
-	for (var i = 0; i < ibg.length; i++) {
-		if (ibg[i].querySelector('img')) {
-			ibg[i].style.backgroundImage = 'url(' + ibg[i].querySelector('img').getAttribute('src') + ')';
-		}
-	}
-}
-ibg();
-
-//------------------slider---------------//
-// const galleryEl = document.getElementById('gallery');
-// console.log(galleryEl);
-// window.addEventListener('load', function () {
-// 	if(galleryEl){
-// 		baguetteBox.run('.gallery');
-// 	}
-// 	return;
-// });
 
 //--------------SlickSlider-------------//
 const sliderEl = document.querySelector('.slider');
@@ -82,20 +62,7 @@ console.log(logoSlider);
  });
 
 
-//Modal-----
-// const backDrop = document.querySelector('.backdrop');
-// console.log(backDrop);
-// // const openModal = document.querySelector('.header__list');
-// // console.log(openModal);
 
-// document.addEventListener('click', onClick);
-// // document.addEventListener('click', closeModal);
-// function onClick(e){
-// 	if(e.target.nodeName === "BUTTON"){
-// 		backDrop.classList.toggle('active');
-// 		document.body.classList.toggle('lock');
-// 	}
-// }
 //hideHeader-----------
 const headerEl = document.querySelector('.header');
 let lastScroll = 0;
@@ -106,7 +73,7 @@ const containHide = () => headerEl.classList.contains('active');
 window.addEventListener('scroll', onScrollHide);
 
 function onScrollHide (){
-	if(scrollPsition() > lastScroll && !containHide()){
+	if(scrollPsition() > lastScroll && !containHide() && scrollPsition() > defaultOffset){
 		headerEl.classList.add('active');
 		console.log('down');
 	} else if(scrollPsition() < lastScroll && containHide()) {

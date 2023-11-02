@@ -24,17 +24,17 @@ body.lock{
 	}
 }
 //-------------------ibg----------------//
-.ibg{
-   background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      position: relative;
+// .ibg{
+//    background-position: center;
+//       background-size: cover;
+//       background-repeat: no-repeat;
+//       position: relative;
 
-      img{
-      display: none;
-         }
+//       img{
+//       display: none;
+//          }
 	
-}
+// }
 //-------------------------------------//
 
 
@@ -161,34 +161,38 @@ body.lock{
 
 .logo {
 	position: absolute;
-	bottom: -40px;
+	bottom: -30px;
 	left: 0;
 	@media screen and (min-width:750px){
 		bottom: -60px;
 	}
 }
-.logo-text {
-	font-size: 100px;
-	font-weight: 700;
-	color: rgb(202, 0, 0);
-	position: relative;
-	text-shadow: 0px 3px 4px rgb(131, 131, 131);
+.logo__img{
+	width: 110px;
 	@media screen and (min-width:750px){
-		font-size: 160px;
+		width: 170px;
 	}
+	
+}
+.logo__text {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	bottom: 33px;
+	left: 100px;
+	font-size: 23px;
+	font-weight: 700;
+	color: #ffffff;
 	span{
-		font-size: 40px;
-		position: absolute;
-		top: 20px;
-		left: 95px;
-		color: white;
-		text-shadow: 0px 0px 0px rgb(255, 255, 255);
+		font-size: 13px;
 		@media screen and (min-width:750px){
-			bottom: -60px;
-			font-size: 69px;
-			top: 30px;
-			left: 150px;
+			font-size: 15px;
 		}
+	}
+	@media screen and (min-width:750px){
+		bottom: 65px;
+		left: 150px;
+		font-size: 25px;
 	}
 }
 
@@ -296,7 +300,7 @@ body.lock{
 		@media screen and (min-width: 750px){
 			margin-left: 20px;
 			font-size: 13px;
-			padding: 5px;
+			padding: 10px;
 		}
 }
 .polygon {
@@ -492,10 +496,11 @@ body.lock{
 	padding-right: 3px;
 	animation: cursor .4s step-end infinite alternate, typing 1s steps(10);
 	
-	margin: 40px 0;
+	margin: 20px 0 !important;
 	@media (max-width: 750px){
-		font-size: 17px;
+		font-size: 22px;
 		text-align: center;
+		
 	}
 }
 
@@ -510,7 +515,12 @@ body.lock{
 		width: 0;
 	}
 }
+.--row-margin{
+	@media (max-width: 750px){
+		margin: 0 0 0 0 !important;
+	}
 
+}
 .works__row {
 	display: flex;
 	align-items: flex-start;
@@ -527,6 +537,8 @@ body.lock{
 		
 	}
 }
+
+
 .works__img {
 	display: block;
 	border: 1px solid rgb(203, 203, 203);
@@ -552,9 +564,8 @@ body.lock{
 	}
 	@media (max-width: 750px){
 		flex: 0 0 100%;
-		padding: 0 0 50% 0;
-		
-		margin: 0 0 10px 0;
+		height: 350px;
+		margin-bottom: 20px;
 	}
 }
 .works__body {
@@ -589,7 +600,7 @@ body.lock{
 }
 .works__text {
 	line-height: 1.4;
-	height: 115px;
+	height: auto;
 	overflow: auto;
 	
 }
@@ -623,7 +634,10 @@ body.lock{
 
 
 .portpholio{
+	padding: 110px 0 0 0;
+@media screen and (min-width: 750px) {
 	padding: 160px 0 0 0;
+}
 	
 	
 }
@@ -702,7 +716,10 @@ body.lock{
 //----------------Photos------------------//
 
 .photo {
-	padding: 160px 0 0 0;
+	padding: 110px 0 0 0;
+	@media screen and (min-width: 750px) {
+		padding: 160px 0 0 0;
+	}
 }
 
 .photo__title {
