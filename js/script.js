@@ -42,6 +42,7 @@ console.log(logoSlider);
 		$('.log-slider__list').slick({
 			slidesToShow: 3,
 			slidesToScroll: 1,
+			infinite: true,
 			// centerPadding: "20px",
 			centerMode: true,
 			responsive:[

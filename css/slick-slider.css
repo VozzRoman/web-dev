@@ -96,8 +96,18 @@
 
 .slide__text {
   position: absolute;
-  top: 63%;
+  top: 85%;
   bottom: 0;
+}
+@media screen and (min-width: 420px) {
+  .slide__text {
+    top: 87%;
+  }
+}
+@media screen and (min-width: 750px) {
+  .slide__text {
+    top: 63%;
+  }
 }
 
 .logo-slider__container {
